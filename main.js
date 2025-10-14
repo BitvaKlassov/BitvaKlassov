@@ -61,6 +61,17 @@ classSelect.addEventListener('change', function () {
     }
 });
 
+const url = "https://raw.githubusercontent.com/BitvaKlassov/BitvaKlassov/refs/heads/main/data/"
+
+async function main(url){
+    const request = await fetch(url);
+    if(request.status != 200)return;
+    const data = await request.json();
+    for(let i=0;i<data.length;i++){
+        console.log(data[i]);
+    }
+}
+
 function bukvaSelected(a){
-    alert(classSelect.value + a);
+    main(url + classSelect.value + a + ".json");
 }

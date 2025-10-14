@@ -55,14 +55,13 @@
     -moz-appearance: none;
     font-family: system-ui, sans-serif;
     float:left;
-    margin:0px;
     color:white;
     font-size:2.5vh;
     height:5vh;
     border-radius:0 20px 20px 0;
     background-color:rgba(0,0,0,0);
-    border:0px;
-    align: center;
+    border:5px solid rgba(0,0,0,0);
+    box-shadow:0px;
 }
 
 #classText:focus {

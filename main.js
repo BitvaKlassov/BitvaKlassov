@@ -63,13 +63,47 @@ classSelect.addEventListener('change', function () {
 
 const url = "https://raw.githubusercontent.com/BitvaKlassov/BitvaKlassov/refs/heads/main/data/"
 
+var selectedClass = document.getElementById('selectedClass');
+
 async function main(url){
     const request = await fetch(url);
     if(request.status != 200)return;
     const data = await request.json();
-    console.log(data);
+    if(data.length>0){
+        selectedClass.replaceChildren();
+
+        const children = document.createElement('div');
+        children.className = "children";
+
+        const childrenName = document.createElement('h1');
+        childrenName.className = "name";
+        childrenName.textContent = "Фамилия Имя Класс";
+
+        const childrenPoints = document.createElement('h1');
+        childrenPoints.className = "points";
+        childrenPoints.textContent = "Баллы";
+
+        children.appendChild(childrenName);
+        children.appendChild(childrenPoints);
+
+        selectedClass.appendChild(children);
+    }
     for(let i=0;i<data.length;i++){
-        console.log(data[i]);
+        const children = document.createElement('div');
+        children.className = "children";
+
+        const childrenName = document.createElement('h1');
+        childrenName.className = "name";
+        childrenName.textContent = data[i].name;
+
+        const childrenPoints = document.createElement('h1');
+        childrenPoints.className = "points";
+        childrenPoints.textContent = data[i].points;
+
+        children.appendChild(childrenName);
+        children.appendChild(childrenPoints);
+
+        selectedClass.appendChild(children);
     }
 }
 

@@ -7,7 +7,9 @@
 <body id="bodyMain">
     <div id="navigate">
         <div id="classSelect">
-            <h1 id="classText">Класс:</h1>
+            <select id="classText" clickable="false">
+                <option>Класс:</option>
+            </select>
             <select name="class" id="classes">
                 <option class="options" value="5" onclick="alert('penis');  ">5</option>
                 <option class="options" value="6">6</option>
@@ -19,20 +21,27 @@
             </select>
         </div>
         <div id="bukvaSelect" class="bukvaFSS">
-            <button id="bukvaA" class="bukva" onclick="bukvaSelected('А')">А</button>
-            <button id="bukvaB" class="bukva" onclick="bukvaSelected('Б')">Б</button>
-            <button id="bukvaC" class="bukva" onclick="bukvaSelected('В')">В</button>
-            <button id="bukvaD" class="bukva" onclick="bukvaSelected('Г')">Г</button>
-            <button id="bukvaE" class="bukva" onclick="bukvaSelected('Д')">Д</button>
-            <button id="bukvaF" class="bukva" onclick="bukvaSelected('Е')">Е</button>
-            <button id="bukvaG" class="bukva" onclick="bukvaSelected('И')">И</button>
-            <button id="bukvaH" class="bukva hidden" onclick="bukvaSelected('ИТ')">ИТ</button>
-            <button id="bukvaI" class="bukva hidden" onclick="bukvaSelected('СЕ')">СЕ</button>
-            <button id="bukvaJ" class="bukva hidden" onclick="bukvaSelected('ФМ')">ФМ</button>
-            <button id="bukvaK" class="bukva hidden" onclick="bukvaSelected('ГУМ')">ГУМ</button>
+            <button id="bukvaA" class="bukva" onclick="bukvaSelected('A')">А</button>
+            <button id="bukvaB" class="bukva" onclick="bukvaSelected('B')">Б</button>
+            <button id="bukvaC" class="bukva" onclick="bukvaSelected('C')">В</button>
+            <button id="bukvaD" class="bukva" onclick="bukvaSelected('D')">Г</button>
+            <button id="bukvaE" class="bukva" onclick="bukvaSelected('E')">Д</button>
+            <button id="bukvaF" class="bukva" onclick="bukvaSelected('F')">Е</button>
+            <button id="bukvaG" class="bukva" onclick="bukvaSelected('G')">И</button>
+            <button id="bukvaH" class="bukva hidden" onclick="bukvaSelected('H')">ИТ</button>
+            <button id="bukvaI" class="bukva hidden" onclick="bukvaSelected('I')">СЕ</button>
+            <button id="bukvaJ" class="bukva hidden" onclick="bukvaSelected('J')">ФМ</button>
+            <button id="bukvaK" class="bukva hidden" onclick="bukvaSelected('K')">ГУМ</button>
         </div>
     </div>
     <div id="selectedClass">
-
+        <div class="children" style="border-radius:25px 25px 0 0">
+            <h1 class="name">ФИО класс</h1>
+            <h1 class="points">баллы</h1>
+        </div>
+        <div class="children">
+            <h1 class="name">Минчаков Артемий Сергеевич 11ИТ</h1>
+            <h1 class="points">20</h1>
+        </div>
     </div>
 </body>

@@ -4,7 +4,7 @@
     border:0px;
     margin:0px;
     padding:0px;
-    background-color:rgb(230,230,230);
+    background-color:rgb(191,203,251);
 }
 
 #navigate {
@@ -12,6 +12,7 @@
     width:96vw;
     height:5vh;
     background-color:rgb(140,161,246);
+    border-radius:0 0 25px 25px;
 }
 
 #classSelect{
@@ -49,23 +50,33 @@
 }
 
 #classText {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     font-family: system-ui, sans-serif;
     float:left;
     margin:0px;
     color:white;
-    padding-top:0.5vh;
     font-size:2.5vh;
-    height:4.25vh;
+    height:5vh;
+    border-radius:0 20px 20px 0;
+    background-color:rgba(0,0,0,0);
+    border:0px;
     align: center;
 }
 
+#classText:focus {
+     outline: none;
+}
+
 #classes {
-    border:0px;
+    border:5px solid rgb(125,137,185);
     font-size:2.5vh;
     float:right;
     color:white;
     box-shadow:0px;
-    background-color:rgba(0,0,0,0);
+    border-radius:0 20px 20px 0;
+    background-color:rgba(170,185,251,255);
     height:5vh;
 }
 
@@ -82,6 +93,7 @@
 }
 
 .bukva {
+    font-family: system-ui, sans-serif;
     font-weight:750;
     color:white;
     font-size:1vh;
@@ -97,7 +109,36 @@
 
 #selectedClass{
     margin-top:0.5vh;
+    padding-top:0.25vh;
     width:100vw;
     height:89.5vh;
     background-color:rgb(140,161,246);
+    border-radius:25px 25px 0 0;
+}
+
+.children{
+    margin:0.25vh 1vw;
+    height:5vh;
+    background-color:rgb(125,137,185);
+    padding:0 25px;
+}
+
+.name{
+    margin:0px;
+    font-family: system-ui, sans-serif;
+    color:white;
+    margin-top:1.35vh;
+    height:2.3vh;
+    font-size:1.75vh;
+    float:left;
+}
+
+.points{
+    margin:0px;
+    font-family: system-ui, sans-serif;
+    color:white;
+    margin-top:1.35vh;
+    height:2.3vh;
+    font-size:1.75vh;
+    float:right;
 }

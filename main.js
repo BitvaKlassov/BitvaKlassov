@@ -67,6 +67,7 @@ async function main(url){
     const request = await fetch(url);
     if(request.status != 200)return;
     const data = await request.json();
+    console.log(data);
     for(let i=0;i<data.length;i++){
         console.log(data[i]);
     }

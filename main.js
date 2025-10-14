@@ -62,7 +62,5 @@ classSelect.addEventListener('change', function () {
 });
 
 function bukvaSelected(a){
-
     alert(classSelect.value + a);
-    
 }

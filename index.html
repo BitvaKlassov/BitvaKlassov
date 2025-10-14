@@ -1,0 +1,38 @@
+<head>
+    <link href="main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script defer src="main.js"></script>
+    <title>Битва классов</title>
+</head>
+<body id="bodyMain">
+    <div id="navigate">
+        <div id="classSelect">
+            <h1 id="classText">Класс:</h1>
+            <select name="class" id="classes">
+                <option class="options" value="5" onclick="alert('penis');  ">5</option>
+                <option class="options" value="6">6</option>
+                <option class="options" value="7">7</option>
+                <option class="options" value="8">8</option>
+                <option class="options" value="9">9</option>
+                <option class="options" value="10">10</option>
+                <option class="options" value="11">11</option>
+            </select>
+        </div>
+        <div id="bukvaSelect" class="bukvaFSS">
+            <button id="bukvaA" class="bukva" onclick="bukvaSelected('А')">А</button>
+            <button id="bukvaB" class="bukva" onclick="bukvaSelected('Б')">Б</button>
+            <button id="bukvaC" class="bukva" onclick="bukvaSelected('В')">В</button>
+            <button id="bukvaD" class="bukva" onclick="bukvaSelected('Г')">Г</button>
+            <button id="bukvaE" class="bukva" onclick="bukvaSelected('Д')">Д</button>
+            <button id="bukvaF" class="bukva" onclick="bukvaSelected('Е')">Е</button>
+            <button id="bukvaG" class="bukva" onclick="bukvaSelected('И')">И</button>
+            <button id="bukvaH" class="bukva hidden" onclick="bukvaSelected('ИТ')">ИТ</button>
+            <button id="bukvaI" class="bukva hidden" onclick="bukvaSelected('СЕ')">СЕ</button>
+            <button id="bukvaJ" class="bukva hidden" onclick="bukvaSelected('ФМ')">ФМ</button>
+            <button id="bukvaK" class="bukva hidden" onclick="bukvaSelected('ГУМ')">ГУМ</button>
+        </div>
+    </div>
+    <div id="selectedClass">
+
+    </div>
+</body>

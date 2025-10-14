@@ -1,0 +1,103 @@
+#bodyMain {
+    width:100%;
+    height:100%;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    background-color:rgb(230,230,230);
+}
+
+#navigate {
+    padding:2.5vh 2vw;
+    width:96vw;
+    height:5vh;
+    background-color:rgb(140,161,246);
+}
+
+#classSelect{
+    background-color:rgb(125,137,185);
+
+    height:5vh;
+    width:30vw;
+    border-radius:20px;
+    float:left;
+}
+
+#bukvaSelect{
+    background-color:rgb(125,137,185);
+
+    height:3vh;
+    width:30vw;
+    padding:1vh 1vw;
+
+    border-radius:20px;
+    float:right;
+    display: grid;
+    grid-column-gap: 1vw;
+}
+
+.bukvaFSS{
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.bukvaEN{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.bukvaTE{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#classText {
+    font-family: system-ui, sans-serif;
+    float:left;
+    margin:0px;
+    color:white;
+    padding-top:0.5vh;
+    font-size:2.5vh;
+    height:4.25vh;
+    align: center;
+}
+
+#classes {
+    border:0px;
+    font-size:2.5vh;
+    float:right;
+    color:white;
+    box-shadow:0px;
+    background-color:rgba(0,0,0,0);
+    height:5vh;
+}
+
+#classes:focus {
+     outline: none;
+}
+
+.options {
+    font-size:35px;
+    color:white;
+    background-color:rgb(140,161,246);
+    border:0px;
+    padding:0px;
+}
+
+.bukva {
+    font-weight:750;
+    color:white;
+    font-size:1vh;
+    border:0px;
+    padding:0px;
+    background-color:rgb(140,161,246);
+    border-radius:10px;
+}
+
+.hidden{
+    display:none;
+}
+
+#selectedClass{
+    margin-top:0.5vh;
+    width:100vw;
+    height:89.5vh;
+    background-color:rgb(140,161,246);
+}
